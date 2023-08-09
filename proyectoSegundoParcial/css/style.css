@@ -1,0 +1,316 @@
+:root {
+  font-size: 10px;
+  --background-principal: #dbdbdb;
+  --color-primario: #EE2525;
+  --color-secundario: #FF9933;
+  --color-terciario: #330000;
+  --color-blanco: #fff;
+  --color-negro: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-principal);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  width: 90vw;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--color-blanco);
+  background-color: var(--color-primario);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  margin: 1rem 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1rem;
+  background-color: var(--color-blanco);
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--color-terciario);
+}
+
+/* botones */
+
+.boton, .botonR {
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 3rem;
+  color: var(--color-blanco);
+  background-color: var(--color-secundario);
+  border: 0.2rem solid var(--color-primario);
+  border-radius: 3rem;
+  text-decoration: none;
+  box-shadow: 0 0 0.5rem var(--color-terciario);
+  transition: all 0.4s ease-in-out;
+}
+
+.cRegresar {
+  display: flex;
+  justify-content: right;
+  margin: 1rem 0;
+}
+
+.cRegresarIndex {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.botonR {
+  margin: 1rem 0;
+  box-shadow: 0 0 1rem var(--color-terciario);
+}
+
+.boton:hover, .botonR:hover {
+  color: var(--color-terciario);
+  background-color: var(--color-primario);
+  border: 0.2rem solid var(--color-secundario);
+  transform: scale(1.06);
+}
+
+.boton:focus, .botonR:focus {
+  color: var(--color-terciario);
+  background-color: var(--color-primario);
+  border: 0.2rem solid var(--color-secundario);
+  transform: scale(1.06);
+}
+
+.boton:active, .botonR:active {
+  color: var(--color-blanco);
+  background-color: var(--color-terciario);
+  border: 0.2rem solid var(--color-negro);
+}
+
+#cBox {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+h2 {
+  margin: 2rem 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-terciario);
+  text-transform: uppercase;
+}
+
+/* relleno */
+
+.participantesGrupo article {
+  text-align: center;
+}
+
+img {
+  margin: 0.5rem;
+  height: 10rem;
+}
+
+.participantesGrupo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.participantesGrupo p {
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-terciario);
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nombresIntegrantes {
+  margin: 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.pIntegrantes {
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  color: var(--color-terciario);
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* form */
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.grupoForm {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+/* !no descomentar. (A,C) */
+/* .grupoForm input {
+  text-transform: uppercase;
+} */
+
+input {
+  margin: 1rem;
+  width: 80%;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 0.5rem outset var(--color-primario);
+  box-shadow: 0 0 1rem var(--color-terciario);
+  transition: all 0.4s ease-in-out;
+}
+
+input:hover {
+  transform: scale(1.02);
+  border: 0.5rem inset var(--color-primario);
+}
+
+input:focus {
+  transform: scale(1.03);
+  border: 0.5rem inset var(--color-primario);
+}
+
+input:active {
+  transform: scale(1.03);
+  border: 0.5rem inset var(--color-primario);
+}
+
+#resp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--color-blanco);
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--color-primario);
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem var(--color-terciario);
+  transition: all 0.4s ease-in-out;
+}
+
+/* contenedor-aceptar,limpiar */
+
+.cBotones{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* footer */
+
+footer {
+  padding: 0.5rem 0.5rem;
+  margin-top: auto;
+  background-color: var(--color-primario);
+}
+
+.pFooter {
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-terciario);
+  text-align: center;
+  font-weight: 700;
+}
+
+.contacto {
+  transition: all 0.4s ease-in-out;
+}
+
+.contacto:link {
+  color: var(--color-terciario);
+}
+
+.contacto:hover {
+  color: var(--color-blanco);
+}
+
+/* 767 */
+@media screen
+and (max-width: 567px) {
+  :root {
+    font-size: 6px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  .container {
+    justify-content: center;
+  }
+  .boton {
+    margin: 1.5rem;
+  }
+  .participantesGrupo {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .pIntegrantes {
+    font-size: 2.2rem;
+  }
+  #formulario {
+    width: 90%;
+    margin: 20% 0;
+  }
+  .grupoForm{
+    margin: 1.5rem 0;
+  }
+  .label {
+    font-size: 3.5rem;
+  }
+  .cBotones {
+    margin: 2rem 0;
+  }
+  #resp {
+    font-size: 3rem;
+  }
+  .pFooter {
+    font-size: 2.5rem;
+  }
+}
